@@ -14,7 +14,7 @@ public class Main {
             long start = System.currentTimeMillis();
             BigInteger result = forkJoinPool.invoke(new FactorialService(BigInteger.ONE, end));
             long endd = System.currentTimeMillis();
-//            System.out.println("result: " + result);
+            System.out.println("result: " + result);
             System.out.println("number of symbols: " + String.valueOf(result).length());
             System.out.println((endd - start) + " millisecond for FJP");
             long start2 = System.currentTimeMillis();
