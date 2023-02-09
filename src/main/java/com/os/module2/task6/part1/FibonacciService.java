@@ -6,7 +6,7 @@ import java.util.concurrent.RecursiveTask;
 public class FibonacciService extends RecursiveTask<Integer> {
     private final int n;
 
-    FibonacciService(int n) {
+    public FibonacciService(int n) {
         this.n = n;
     }
 
